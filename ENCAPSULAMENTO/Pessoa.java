@@ -6,7 +6,6 @@ import java.util.Random;
     private String nome;
     private int codigo_identificador;
     private Random aleatorio;   
-    //Métodos
     public Pessoa (String nome){
          aleatorio = new Random();
          this.setNome(nome);
