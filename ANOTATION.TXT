@@ -1,0 +1,127 @@
+ 
+INICIANDO EM JAVA - LINGUAGEM DE PROGRAMAÇÃO ORIENTADA A OBJETOS 
+
+ -> A sintaxe do Java é semelhante à sintaxe do C++ 
+ -> O Java é dedicado para  POO (Orientado a objetos) 
+ -> Restrição de acesso aos dados
+ -> Código mais organizado    
+
+
+//////////// MÓDULO 1 - CLASSES, OBJETOS, ATRIBUTO E METODO ////////////
+
+public class Aluno {
+    private String nome; //Atributo 
+    public void inserirNome(String nn) { //Método
+        nome = nn;
+    }
+    public String recuperarNome() { //Método
+        return nome;
+    }
+    public static void main(String args[]) {
+        Aluno a = new Aluno();
+        a.inserirNome ("Daniel"); 
+        System.out.println("Saida: "+a.recuperarNome());
+    }
+
+}
+  
+Uma classe pode definir: 
+
+-> Dados
+-> Métodos que operam sobre esses dados
+-> Mecanismo de instanciação dos objetos
+
+Formas de declaração: (Modificadores de Classe)
+
+{Annotation, public, protected, private, abstract, static, final, strictfp}.
+
+Uma classe pode ser declarada com mais de uma forma de declaração. 
+---
+
+**✅ Classe:**  
+É um **molde** ou **modelo**.  
+Pensa nela como uma **forma de bolo** — define como o bolo será, mas ainda não é o bolo.
+
+---
+
+**✅ Objeto:**  
+É o que você cria **a partir da classe**.  
+É o **bolo pronto**, feito com a forma.
+ 
+---
+
+**✅ Atributo:**  
+É uma **característica** do objeto "SABOR DO BOLO".  
+Se tratando de carros seria tipo: cor, modelo, velocidade...
+
+---
+
+**✅ Método:**  
+É uma **ação** que o objeto pode fazer.  
+Tipo: ligar, frear, acelerar...
+
+
+//////////// INSTANCIACAO DE CLASSES ////////////
+
+
+-> Primeiro declaramos um objeto sendo do tipo de uma classe
+-> Instanciamos o objeto e passamos a utiliza-lo
+
+Aluno objetoAluno = new Aluno();
+
+ou
+
+Aluno objetoAluno; 
+    
+    objetoAluno = new Aluno();
+
+
+
+import java.util.Random;
+public class Aluno{    
+    //Atributos
+    private String nome;
+    private int idade;
+    private double codigo_identificador;
+    private Random aleatorio;
+        //Construtor
+        public Aluno(String nome, int idade){
+           aleatorio = new Random();
+           this.nome = nome;
+           this.idade = idade;
+           this.codigo_identificador = aleatorio.nextDouble();
+        }
+            //Métodos
+            public void definirNome(String nome){
+            this.nome = nome;
+            }  
+            public void definirIdade( int idade){
+            this.idade = idade;
+            }
+    }
+
+/////////////// CLASSES E ENCAPSULAMENTO DE CÓDIGO  ///////////////
+
+
+Tipos de visibilidade:
+- Private
+- Protected 
+- Public
+
+Pontos positivos: 
+- Programas organizados 
+- Separação de papéis de responsabilidade
+- Aumentar Segurança
+
+
+///////////////// TIPOS DE RELAÇÕES ENTRE OBJETOS /////////////////
+-> Associação - objetos que usam serviços de outros
+-> Agregação - entre dois ou mais objetos, cada um com um ciclo de vida mas com um pai e demais filhos
+-> Composição - mesma coisa que agregação, porém, o filho depende do pai para existir 
+
+
+///////////////// USO DE REFERÊNCIA DE OBJETOS EM JAVA /////////////////
+
+-> JAVA NÃO UTILIZA PONTEIROS
+-> A PASSAGEM DE VETORES É FEITA POR REFERENCIA 
+-> TOMAR CUIDADO PARA EVITAR COMPORTAMENTO INESPERADOS  
