@@ -1,6 +1,6 @@
 package REFERENCIA;
 public class Aluno {
-    //Atributos 
+     
     private String nome;
     private int idade;
 
