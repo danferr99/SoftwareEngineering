@@ -1,3 +1,4 @@
+//Exemplo encapsulamento
 import java.util.Random;
     //Classe
     public class Pessoa {    
