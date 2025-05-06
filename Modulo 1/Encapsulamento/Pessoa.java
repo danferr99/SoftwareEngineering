@@ -1,5 +1,4 @@
 //Exemplo prático encapsulamento
-//Teste Alteração outro ambiente
 import java.util.Random;
     //Classe
     public class Pessoa {    
