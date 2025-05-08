@@ -1,5 +1,7 @@
 //Exemplo encapsulamento
 import java.util.Random;
+
+import Herança.Pessoa;
     //Classe
     public class Pessoa {    
     //Atributos

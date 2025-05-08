@@ -1,4 +1,3 @@
-
 import java.util.Calendar;
 
 public class Empregado extends Pessoa {
